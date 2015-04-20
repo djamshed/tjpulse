@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>ТаджПульс</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" media="all" href="css/fontello.css" />
+  <link rel="stylesheet" media="all" href="css/main.css" />
+</head>
+<body>
+
+  <div class="header-row">
+    <a href="/">
+      <div class="header-row__circle">T</div>
+      ТаджПульс - последнее о Таджикистане из социальных сетей
+    </a>
+  </div>
+
+  <div class="menu-row">
+    <div class="menu-row__content">
+      <a href="/" class="menu-row__link active">ТаджПульс</a>
+      <a href="about.html" class="menu-row__link">О проекте</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="latest-message">Последнее обновление было <span id="latest-update" class="latest-message__time"></span></div>
+    <div id="feeds"></div>
+  </div>
+
+  <script src="js/mustache.min.js"></script>
+  <script src="data/feeds.json"></script>
+  <script src="js/client.js"></script>
+
+
+  <!--GA goodness-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61967808-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
